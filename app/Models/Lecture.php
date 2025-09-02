@@ -9,4 +9,7 @@ class Lecture extends Model
 {
     /** @use HasFactory<\Database\Factories\LectureFactory> */
     use HasFactory;
+
+    protected $fillable = ['topic', 'description'];
+    protected $guarded = ['id'];
 }
